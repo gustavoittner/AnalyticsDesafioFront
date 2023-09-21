@@ -38,8 +38,8 @@ Como frontend, deverá haver um bom cuidado com UX, portanto alguns pontos a con
 - Muito cuidado com componentização e performance dos componentes
 - Testes unitários (framework a sua escolha)
 
-## Features hardcore (opcional)
-Caso tenha achado tudo muito tranquilo, ou queira um desafio um pouco maior, aqui vão funcionalidades que podem te dar uma chance maior de nos mostrar suas habilidades e criatividade:
+## Features extras (opcional)
+Caso tenha achado tudo muito tranquilo, ou queira um desafio um pouco maior, aqui vão funcionalidades extras para mostrar suas habilidades e criatividade:
 - Ao invés de 3 opções de resposta, poderão variar de 3-5 de a cordo dificuldade do jogo escolhida pelo usuário. (Fácil|Médio|Difícil).
 - O jogo poderá pedir ao jogador seu username, para que o recorde fique salvo atrelado à esse jogador.
 - O jogador ao perder pontos tem o tempo faltante para a partida encerrar, decrementado.
