@@ -8,6 +8,8 @@ A cada rodada, uma nova cor aparece, e o jogador terá 10s para responder e resu
 - Se o jogador responder a tempo, mas errado, perderá 1 ponto.
 - Se o jogador responder a tempo e corretamente, ganhará 5 pontos.
 
+Não deve ser possível pontuação negativa. O zero é a pontuação mínima permitida.
+
 O jogo conta também com o máximo de pontuação que já foi feita em uma partida (representado no protótipo por `HIGH SCORE`).
 E a pontuação da partida atual (representada no protótipo por `SCORE`).
 Existirá também à esquerda, um histórico das cores referentes a partida atual, que dirá de forma visual quais o jogador acertou, quais errou, e em quanto tempo foram respondidas. A cada vez que uma partida é iniciada, essa pilha é resetada. (representada no protótipo por `CURRENT/LATEST GAME`).
@@ -20,6 +22,13 @@ Existirá também à esquerda, um histórico das cores referentes a partida atua
   - Pilha referente a última partida concluída deverá persistir
 - Se o jogador quiser, ele poderá reiniciar a partida a qualquer momento (representado no protótipo por `RESTART`)
 - Se o jogador quiser, ele poderá limpar todos os dados já salvos pelo jogo. (representado no protótipo por `RESET ALL DATA`)
+- Ao começar o jogo, deve existir uma barra indicando 100% (30 segundos). Conforme o tempo vai diminuindo, a barra vai diminuindo proporcionalmente, até chegar em 0% (0 segundos).
+- Caso o usuário não forneça uma resposta dentro de 10s, uma resposta errada deve ser computada e a barra de progresso deve continuar sendo decrementanda. Ou seja, em um intervalo de 30s, caso o usuário não responda nenhuma vez, haverão 3 respostas erradas que foram computadas automaticamente pelo sistema (30 segundos divididos por 10 segundos resulta em 3).
+- Só deve existir uma barra que será decrementada, apesar de existirem dois timers paralelos rodando, sendo eles:
+  - Timer geral (30s)
+  - Sub timer limite para cada resposta (10s)
+- Toda vez que uma resposta nova é fornecida, o timer de 10s deve ser resetado, mas o de 30s continua.
+- A barra deve sempre refletir o timer geral (30s). O timer de 10s não deve ser representado visualmente na barra.
 
 ## Experiência do usuário
 Como frontend, deverá haver um bom cuidado com UX, portanto alguns pontos a considerar:
@@ -46,10 +55,10 @@ Caso tenha achado tudo muito tranquilo, ou queira um desafio um pouco maior, aqu
 - O jogador ao ganhar pontos, tem o tempo faltante para a partida encerrar, incrementado.
 
 ## Protótipo
-Para ajudar, montamos um protótipo simples de como gostaríamos que ficassem dispostos os componentes do jogo. Não é necessário replicar o visual, mas sim a disposição dos componentes em tela. 
+Para ajudar, montamos um protótipo simples de como gostaríamos que ficassem dispostos os componentes do jogo. **Não é necessário replicar o visual, mas sim a disposição dos componentes em tela**. 
 Sua criatividade conta muito também. Portanto, se tiver algo a acrescentar, fique a vontade. Não esqueça de nos contar o porque de suas decisões.
 Bom desafio!!
 
 ![image](https://user-images.githubusercontent.com/47633508/195155499-50b2a888-5810-4a91-8d98-99c6dceac268.png)
 
-![image](https://user-images.githubusercontent.com/47633508/195155433-be762391-5513-43e3-9f17-f7b6758753fc.png)
+![image](https://github.com/gustavoittner/AnalyticsDesafioFront/assets/47633508/c9cf541b-58bd-4429-bf02-1f547dafa27d)
