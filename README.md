@@ -61,4 +61,4 @@ Bom desafio!!
 
 ![image](https://user-images.githubusercontent.com/47633508/195155499-50b2a888-5810-4a91-8d98-99c6dceac268.png)
 
-![image](https://github.com/gustavoittner/AnalyticsDesafioFront/assets/47633508/c9cf541b-58bd-4429-bf02-1f547dafa27d)
+![image](https://github.com/gustavoittner/AnalyticsDesafioFront/assets/47633508/7c841a46-979c-487e-9b62-24192e5b3bcc)
